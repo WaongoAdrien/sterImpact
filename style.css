@@ -51,7 +51,7 @@ body {
 
 .carousel-caption {
  /* Adjust as needed */
-    transform: translateY(-45%);
+    transform: translateY(-55%);
 	background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
 	backdrop-filter: blur(10px); /* Apply the blur effect */
 }
