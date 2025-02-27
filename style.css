@@ -37,7 +37,9 @@ body {
 /* Push footer to the bottom */
 .content {
 	flex: 1;
-    padding: 10px;
+    	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+
 }
 
 /* Style the footer */
