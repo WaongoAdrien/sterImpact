@@ -52,6 +52,8 @@ body {
 }
 
 .carousel-caption {
+	color: #101316;
+	font-weight: bold;
  	/* Adjust as needed */
     	transform: translateY(-75%);
 	background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
