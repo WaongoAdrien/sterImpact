@@ -222,7 +222,7 @@ h1:hover{
 
 /*contact page formatting*/
 .contact-card {
-	background-image: linear-gradient(var(--blue), var(--lblue));
+	
 	color: black;
 	padding: 5px;
 	border-radius: 20px;
@@ -235,7 +235,7 @@ h1:hover{
 	display: flex;
 	flex-direction: column;
 	line-height: 1.5;
-	background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+	background: rgba(255, 255, 255, 0.2); /*background-image: linear-gradient(var(--blue), var(--lblue)); Semi-transparent background */
 	backdrop-filter: blur(10px); /* Apply the blur effect */
 }
 
@@ -345,7 +345,7 @@ h1:hover{
 
 
 .btni {
-	display: inline-block;
+	display: flex;
 	margin: 10px;
 	background-color: #ff6f61;
 	color: white;
