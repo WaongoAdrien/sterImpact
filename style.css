@@ -66,7 +66,7 @@ body {
   
   @media (min-width: 226px) {
 	.carousel-caption {
-	  font-size: 1px;
+	  font-size: 8px;
 	  padding: 12px;
 	}
   }
