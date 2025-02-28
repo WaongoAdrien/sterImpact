@@ -335,23 +335,23 @@ h1:hover{
 
 
 .btni {
-	width: 90%; /* Make the button take 50% width of the parent div */
-	padding: 15px; /* Adjust padding for uniform size */
-	font-size: 22px; /* Adjust font size */
+	width: 70%; /* Make the button take 50% width of the parent div */
+	padding: 10px; /* Adjust padding for uniform size */
+	font-size: 20px; /* Adjust font size */
 	font-weight: bold; /* Keep bold text */
 	border: none; /* Remove default border */
 	border-radius: 8px; /* Slightly rounded corners */
 	cursor: pointer; /* Change cursor to pointer */
 	text-align: center;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 	color: aliceblue;
-	opacity: 0.8; 
 	background-color: #131416;
 	
   }
   
   
   .btni:hover {
+	opacity: 0.8;   
 	background-color:#647290;/* Add hover effect */
 	
   }
