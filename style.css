@@ -53,8 +53,7 @@ body {
 }
 
 .carousel-caption {
-	display:flex;
-	word-wrap: break-word;
+
 	font-weight: bold;
  	/* Adjust as needed */
     	top: 50%; /* Adjust as needed */
@@ -137,8 +136,8 @@ h2{
 	
 }
 
-h5{
-	font-size:1.5em;
+.carousel-caption h5{
+	font-size:1.9em;
 	font-weight: bold;
 }
 
