@@ -45,6 +45,7 @@ body {
 /* Style the footer */
 
 .carousel-inner {
+	display:inline-block;
 	overflow: visible;
 	width: 90%;
 	margin: auto;
@@ -53,7 +54,7 @@ body {
 }
 
 .carousel-caption {
-
+	
 	font-weight: bold;
  	/* Adjust as needed */
     	top: 50%; /* Adjust as needed */
