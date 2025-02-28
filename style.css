@@ -57,6 +57,19 @@ body {
 	background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
 	backdrop-filter: blur(10px); /* Apply the blur effect */
 }
+  @media (max-width: 768px) {
+	.carousel-caption {
+	  font-size: 14px;
+	  padding: 10px;
+	}
+  }
+  
+  @media (min-width: 226px) {
+	.carousel-caption {
+	  font-size: 1px;
+	  padding: 12px;
+	}
+  }
 /* Ensure carousel images have a fixed height and center */
 .carousel-item img {
 	height: auto;
