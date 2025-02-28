@@ -45,9 +45,10 @@ body {
 /* Style the footer */
 
 .carousel-inner {
+	overflow: visible;
 	width: 90%;
 	margin: auto;
-	max-height: 70vh;
+	max-height: 80vh;
 	border-radius: 5px;
 }
 
