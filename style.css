@@ -343,7 +343,7 @@ h1:hover{
 	border-radius: 8px; /* Slightly rounded corners */
 	cursor: pointer; /* Change cursor to pointer */
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 	color: aliceblue;
 	opacity: 0.8; 
 	background-color: #131416;
