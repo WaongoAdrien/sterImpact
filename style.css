@@ -45,7 +45,7 @@ body {
 /* Style the footer */
 
 .carousel-inner {
-	display:inline-block;
+	
 	overflow: visible;
 	width: 90%;
 	margin: auto;
@@ -346,7 +346,7 @@ h1:hover{
 
 
 .btni {
-	display: flex;
+	display: inline-block;
 	margin: 10px;
 	background-color: #ff6f61;
 	color: white;
