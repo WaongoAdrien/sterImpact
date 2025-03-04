@@ -46,7 +46,7 @@ body {
 
 .carousel-inner {
 	
-	
+	overflow: visible;
 	width: 90%;
 	margin: auto;
 	max-height: 50vh;
