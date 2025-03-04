@@ -29,6 +29,7 @@ body {
 	height: 100%;
 	margin: 0;
 	display: flex;
+	background-color: whitesmoke;
 	flex-direction:column;
 	font-family: sans-serif;
 }
