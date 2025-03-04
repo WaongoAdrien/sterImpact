@@ -1,7 +1,7 @@
 :root{
     --blue:  #6696c9;
     --lblue: #c3d6eb;
-	--dark: #131416;
+    --dark: #131416;
 }
 
 
@@ -30,13 +30,12 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction:column;
-    background-color: whitesmoke;
 	font-family: sans-serif;
 }
 
 /* Push footer to the bottom */
 .content {
-	flex: 2;
+    flex: 2;
     padding: 10px;
 	/* Light background for readability */
 
@@ -46,7 +45,7 @@ body {
 
 .carousel-inner {
 	
-	overflow: visible;
+	
 	width: 90%;
 	margin: auto;
 	max-height: 50vh;
@@ -257,7 +256,7 @@ h1:hover{
 	float: right;
 	margin-left: 10px;
 	text-decoration:underline;
-	transition: color 1s ease;
+	transition: color 0.4s ease;
 
 }
 
