@@ -45,7 +45,7 @@ body {
 	height: 100%;
 	margin: 0;
 	display: flex;
-	background-color: var(--dark2);
+	background-color: var(--lblue);
 	flex-direction:column;
 	font-family: sans-serif;
 }
@@ -63,7 +63,7 @@ body {
 .carousel-inner {
 	
 	overflow: visible;
-	width: 100%;
+	width: 95%;
 	margin: auto;
 	max-height: 50vh;
 	border-radius: 5px;
