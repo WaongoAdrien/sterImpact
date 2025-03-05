@@ -45,7 +45,7 @@ body {
 	height: 100%;
 	margin: 0;
 	display: flex;
-	background-color: var(--dark2);
+	background-color: var(--lblue);
 	flex-direction:column;
 	font-family: sans-serif;
 }
