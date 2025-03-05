@@ -2,6 +2,22 @@
     --blue:  #6696c9;
     --lblue: #c3d6eb;
     --dark: #131416;
+    --dark2: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
 }
 
 
@@ -29,7 +45,7 @@ body {
 	height: 100%;
 	margin: 0;
 	display: flex;
-	background-color: whitesmoke;
+	background-color: var(--dark);
 	flex-direction:column;
 	font-family: sans-serif;
 }
