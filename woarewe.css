@@ -59,7 +59,6 @@
 
 .bottom-box p {
     width: 100%;
-    font-weight: bold;
     word-wrap: normal;
     background: var(--blue);
     padding: 15px;
