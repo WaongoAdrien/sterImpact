@@ -31,12 +31,12 @@
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border-radius: 10px;
 }
 
 .accordion-body .card .top-section{
-    font-weight: bolder;
+    font-weight: lighter;
 }
 
 /* Second child div (bottom section with 3 boxes inside) */
@@ -78,17 +78,17 @@
     margin-bottom: 20px;
 }
 .bottom-box:nth-child(1) img {
-    width: 70%;
+    width: 240px;
     height: 100px;
 }
 
 .bottom-box:nth-child(2) img {
-    width: 25%;
+    width: 100px;
     height: 100px;
 }
 
 .bottom-box:nth-child(3) img {
-    width: 30%;
+    width: 120px;
     height: 100px;
 }
 
