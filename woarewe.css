@@ -23,9 +23,9 @@
     background-image: url(ster11.png);
 }
 
-/* First child div (top section) */
+/* First child div (top section)    background:var(--lblue);*/
 .top-section {
-    background:var(--lblue);
+ 
     font-weight: lighter;
     color: black;
     padding: 20px;
