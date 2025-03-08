@@ -20,7 +20,7 @@
     padding: 20px;
     border: 2px solid #ddd;
     border-radius: 10px;
-    background: var(--lblue);
+    background-image: url(ster11.png);
 }
 
 /* First child div (top section) */
