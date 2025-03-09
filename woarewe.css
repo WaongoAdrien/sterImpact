@@ -51,9 +51,9 @@
 .bottom-box {
     width: 30%;
     background: var(--lblue);
-    padding: 0px;
+    padding: 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
