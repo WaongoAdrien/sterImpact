@@ -79,10 +79,14 @@ body {
 	/* transform: translateY(-5%); background: rgba(255, 255, 255, 0.2);  Semi-transparent background */
 	backdrop-filter: blur(10px); /* Apply the blur effect */
 }
+
+
+  
   @media (max-width: 768px) {
 	.carousel-caption {
 	  font-size: 14px;
 	  padding: 10px;
+	  top: 20%; 
 	}
   }
   
@@ -90,6 +94,7 @@ body {
 	.carousel-caption {
 	  font-size: 8px;
 	  padding: 12px;
+	  top: 20%; 
 	}
   }
 /* Ensure carousel images have a fixed height and center */
@@ -120,11 +125,11 @@ body {
   }
 
 .button-container {
-	width: 80%;
+    width: 80%;
     position: absolute;
     bottom: 20px; /* Adjust as needed */
     left: 76%;
-    transform: translateX(-60%);
+    transform: translateX(-70%);
     display: flex;
     gap: 10px; /* Space between buttons */
 }
