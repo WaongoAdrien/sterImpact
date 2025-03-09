@@ -69,7 +69,7 @@
     flex: 1;
     min-width: 300px; /* Adjust this as needed */
  
- 
+    max-width: 400px;
   
   }
 
