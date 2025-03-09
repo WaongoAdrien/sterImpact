@@ -67,6 +67,9 @@ body {
 	margin: auto;
 	max-height: 50vh;
 	border-radius: 5px;
+
+	max-width: 1300px;
+	min-width: 400px;
 }
 
 
