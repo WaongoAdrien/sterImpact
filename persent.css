@@ -15,6 +15,8 @@
     background-image: linear-gradient(#6696c9, #c3d6eb);
 
     overflow: hidden; /* Clearfix */
+
+     min-width: 400px;
 }
 
 .worker {
