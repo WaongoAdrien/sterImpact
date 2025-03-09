@@ -48,6 +48,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds spacing between elements */
+    flex-wrap: wrap; /* Allows wrapping */
    
 }
 
