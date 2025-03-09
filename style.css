@@ -102,6 +102,18 @@ body {
 	aspect-ratio: 4/7;
 }
 
+@media (max-width: 768px) {
+	.carousel-item img {
+		height: auto;
+		width: auto;
+		max-height: 800px;
+		/* Adjust as needed */
+		
+		object-fit: cover;
+		aspect-ratio: 4/6;
+	}
+  }
+
 .carousel-inner {
 	height: auto !important;
 	
