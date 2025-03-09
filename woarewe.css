@@ -59,6 +59,8 @@
     text-align: center;
     border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px; /* Prevents shrinking too small */
+    max-width: 300px; 
 }
 
 .bottom-box p {
