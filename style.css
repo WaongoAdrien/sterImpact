@@ -76,7 +76,7 @@ body {
 .carousel-caption {
 	font-weight: bold;
  	/* Adjust as needed */
-    	top: 60%; /* Adjust as needed */
+    	top: 70%; /* Adjust as needed */
    	bottom: auto; /* Override default Bootstrap bottom alignment */
 	background: rgba(0, 0, 0, 0.5);
 	/* transform: translateY(-5%); background: rgba(255, 255, 255, 0.2);  Semi-transparent background */
