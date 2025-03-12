@@ -74,7 +74,7 @@ body {
 
 
 .carousel-caption {
-	font-weight: bold;
+	font-weight: ligther;
  	/* Adjust as needed */
     	top: 70%; /* Adjust as needed */
    	bottom: auto; /* Override default Bootstrap bottom alignment */
@@ -85,19 +85,20 @@ body {
 
 
   
-  @media (max-width: 768px) {
+  
+  @media (max-width: 1152px) {/* Screens smaller than 12 inches */
 	.carousel-caption {
-	  font-size: 14px;
+	  font-size: 9px;
 	  padding: 10px;
-	  top: 40%; 
+	  top: 10%; 
 	}
   }
   
-  @media (min-width: 226px) {
+  @media (min-width: 1153px) {
 	.carousel-caption {
-	  font-size: 8px;
+	  font-size: 10px;
 	  padding: 12px;
-	  top: 40%; 
+	  top: 55%; 
 	}
   }
 /* Ensure carousel images have a fixed height and center */
