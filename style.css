@@ -90,13 +90,13 @@ body {
 	.carousel-caption {
 	  font-size: 9px;
 	  padding: 10px;
-	  top: 10%; 
+	  top: 20%; 
 	}
   }
   
   @media (min-width: 1153px) {
 	.carousel-caption {
-	  font-size: 10px;
+	  font-size: 12px;
 	  padding: 12px;
 	  top: 55%; 
 	}
