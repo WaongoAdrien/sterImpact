@@ -36,7 +36,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 1.1rem;
-    border-radius: 0px;
+    border-radius: 5px;
   }
   
   .accordion-body .card .top-section{
@@ -87,7 +87,7 @@
     width: 100%;
     word-wrap: normal;
     background: var(--blue);
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -120,6 +120,6 @@
   
   /* Text under the image */
   .bottom-box p {
-    font-size: 14px;
+    font-size: 12px;
     color: #333;
   }
