@@ -200,7 +200,7 @@ h2{
 	-webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 1152px) {/* Screens smaller than 12 inches */
+@media (max-width: 1156px) {/* Screens smaller than 12 inches */
 	.carousel-caption h2 {
 	  font-size: 3px;
 	  top: 1%; 
