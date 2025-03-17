@@ -17,7 +17,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Fira sans', sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 
@@ -47,7 +47,7 @@ body {
 	display: flex;
 	background-color: var(--lblue);
 	flex-direction:column;
-	font-family: sans-serif;
+	font-family: "Times New Roman", Times, serif;
 }
 
 /* Push footer to the bottom */
