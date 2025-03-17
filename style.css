@@ -253,12 +253,12 @@ h1:hover{
 	margin-bottom:30px ;
 	width: 20%;
 	margin: auto;
-	font-size: 1.5em;
+	font-size: 0.9rem;
 	aspect-ratio: 4/4;
 }
 
 .counter-title {
-	font-size: 0.4em;
+	font-size: 1.4rem;
 	margin-bottom: 10px;
 	font-weight: bold;
 
