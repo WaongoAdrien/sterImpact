@@ -264,6 +264,12 @@ h1:hover{
 
 }
 
+.counter-body{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+	
+
 .counter, .counterA, .counterB{
 	font-size: 30px;
 	font-weight: bold;
