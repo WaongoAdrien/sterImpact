@@ -22,6 +22,7 @@
 
 
 .navbar {
+	font-size: 1.1rem;
 	background-color: #6696c9;
 	transition: background-color 1s ease-in-out, transform 1s ease-in-out;
 	/* Bootstrap primary blue 
