@@ -31,6 +31,8 @@
 }
 
 .navbar:hover {
+	margin-left: 20px; /* Adjust the value as needed */
+        margin-right: 20px;
 	background-color: #131416;
 	transform: scale(1.01);
 }
