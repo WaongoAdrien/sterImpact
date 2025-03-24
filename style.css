@@ -131,6 +131,51 @@ body {
 	}
   }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-container {
+        max-width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-caption h2 {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .carousel-caption {
+        font-size: 14px;
+        font-style: normal;
+        text-align: center;
+    }
+}
+
+
 .carousel-inner {
 	height: auto !important;
 	
