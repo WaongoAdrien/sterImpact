@@ -126,30 +126,32 @@
       <p><i class="fa fa-envelope-o w3-text-blue w3-xlarge"></i>  <a href="mailto:infosterimpact@gmail.com"  target="_blank">infosterimpact@gmail.com</a></p>
 
 
-             <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:5px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Leave a message!</b></h1>
-    <hr style="width:50px;border:5px solid " class="w3-round">
-    <form action="https://formspree.io/f/mvgkvzpa" method="POST">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
+       <!-- Contact -->
+       <div class="w3-container" id="contact" style="margin-top:75px" >
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Contact Us.</b></h1>
+        <hr style="width:50px;border:5px solid " class="w3-round">
+        <form name="contact2"  method="POST" data-netlify="true" onSubmit="submit" netlify
+        data-netlify-honeypot="bot-field" action="submitted.html">
+        <input name="bot-field" style="display: none;">
+          <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input w3-border" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input w3-border" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Phone Number</label>
+            <input class="w3-input w3-border" type="number" name="number" required>
+          </div>
+          <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input w3-border" type="text" name="Message" required>
+          </div>
+          <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+        </form>  
       </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Phone Number</label>
-        <input class="w3-input w3-border" type="number" name="number" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
-    </form>  
-  </div>
 
 
       
