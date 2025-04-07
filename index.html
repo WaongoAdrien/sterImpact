@@ -377,7 +377,9 @@ ul {
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Contact Us.</b></h1>
     <hr style="width:50px;border:5px solid " class="w3-round">
-    <form action="https://formspree.io/f/mvgkvzpa" method="POST">
+           <form name="contact2"  method="POST" data-netlify="true" onSubmit="submit" netlify
+        data-netlify-honeypot="bot-field" action="submitted.html">
+        <input name="bot-field" style="display: none;">
       <div class="w3-section">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
