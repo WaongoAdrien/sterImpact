@@ -102,9 +102,7 @@ body{
     font-stretch: expanded;
 }
 
-.w3-row{
-    background-image: linear-gradient(white, #d1dbe5);
-}
+
 .meet-team {
     font-size: 4rem;
     font-weight: bolder;
@@ -162,6 +160,10 @@ body{
    
    
 }
+
+/*.w3-row{
+    background-image: linear-gradient(white, #d1dbe5);
+}*/
 
 .bgimg2 {
     min-height: 50%;
