@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SterImpact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/from.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      /* Add this class to use Bebas Neue font */
+      .barlow-condensed-regular {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      body,
+      html {
+        overflow-x: hidden;
+      }
+
+      .barlow-condensed-semibold {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .bebas {
+        font-family: 'bebas neue', sans-serif;
+      }
+
+      .oswald {
+        font-family: 'Oswald', sans-serif;
+      }
+
+      .light {
+        font-weight: 300;
+        /* Light */
+        font-size: 1rem;
+        color: #666;
+      }
+
+      .regular {
+        font-weight: 400;
+        /* Regular */
+        font-size: 1.1rem;
+      }
+
+      .bold {
+        font-weight: 700;
+        /* Bold */
+        font-size: 1.1rem;
+      }
+
+      .w3-tag,
+      .fa {
+        cursor: pointer
+      }
+
+      .w3-tag {
+        height: 10px;
+        width: 10px;
+        padding: 0;
+        margin-top: 6px
+      }
+
+      .bgimg2 {
+        background-image: url("/image/bgimg2.png")
+      }
+
+      .bgimg1 {
+        background-image: url("/image/farmer.png")
+      }
+
+      ul {
+        list-style-type: none;
+        /* Remove bullets */
+        padding: 5px;
+        /* Remove padding */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <!-- Left-side links -->
+        <a class="navbar-brand ms-1" href="index.html">
+          <img src="image/logo_1.png" alt="Logo" style="border-radius: 0px; width: 40px;height: 40px;">
+          <span class="w3-hide-large  bebas ">Ster Impact</span>
+        </a>
+        <button class="navbar-toggler underline-hover" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link underline-hover" href="about.html">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline-hover" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline-hover" href="success.html">Impact Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html"></a>
+            </li>
+          </ul>
+          <!-- Right-side links -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link underline-hover" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline-hover" href="upcoming.html">Events</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container " style="background-image: url('image/services.png');">
+      <div class="content1 ">
+        <h1 class="bebas">Submit an application </h1>
+        <p>Your vision, your words.</p>
+      </div>
+    </div>
+    <br>
+    <!--form-->
+    <div class="container ">
+      <div class="form-container">
+        <h4 class="text-center mb-4 h1-top bebas ">To Submit your application</h4>
+        <h4 class="text-center mb-4 bebas copper">Enter Your Information below</h4>
+        <form id="submit-to-google-sheet" class="barlow-condensed-regular padding3">
+          <div class="form-group">
+            <label for="last_name">Last Name:</label>
+            <input class="form-control" type="text" name="last_name" id="last_name" placeholder="Last Name" required />
+          </div>
+          <div class="form-group">
+            <label for="first_name">First Name:</label>
+            <input class="form-control" type="text" name="first_name" id="first_name" placeholder="First Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="contact_number">Contact Number:</label>
+            <input class="form-control" type="tel" name="contact_number" id="contact_number" placeholder="Contact Number" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Service:</label>
+            <select class="form-control" name="service" id="service" required>
+              <option value="" disabled selected hidden>Choose...</option>
+              <option value="Accelerate">Ster Accelerate</option>
+              <option value="Advisory">Ster Advisory</option>
+              <option value="Fund">Ster Fund</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" name="message" id="message" placeholder="Message" required></textarea>
+          </div>
+          <div class="form-group mt-2">
+            <label for="media">Upload your documents:</label>
+            <input class="form-control" type="file" name="media" id="media" accept=".pdf,.doc,.docx,image/*" multiple />
+          </div>
+          <br>
+          <div class="form-group form-check mt-2">
+            <input class="form-check-input" type="checkbox" id="age" />
+            <label class="form-check-label" for="age">Agree to follow our due process</label>
+          </div>
+          <div class="form-group form-check">
+            <input class="form-check-input" type="checkbox" id="ex" required />
+            <label class="form-check-label" for="ex">By checking this box I certify that I agree with the data terms and policies.</label>
+          </div>
+          <button type="submit" class="btn-block ">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-custom text-white text-center py-2 mt-5 ">
+      <h4 class="bebas">Follow us </h4>
+      <i class="fa fa-facebook-official underline-hover text-white " style="font-size: 1rem;"></i>
+      <i class="fa fa-instagram underline-hover text-white " style="font-size: 1rem;"></i>
+      <i class="fa fa-twitter underline-hover text-white " style="font-size: 1rem;"></i>
+      <i class="fa fa-linkedin underline-hover text-white " style="font-size: 1rem;"></i>
+      <br>
+      <a href="#" class="text-white w3-margin underline-hover">
+        <i class="fa fa-arrow-up w3-margin-right"></i>To the top </a>
+      <div class="container">
+        <p class="mb-0 text-white text-decoration-none mx-2 underline-hover font">&copy; 2025 Ster Impact. All Rights Reserved.</p>
+        <p class="mb-0">
+          <!--<i class="fa-brands fa-facebook" style="font-size: 24px; color: rgb(124, 124, 171);"></i> -->
+          <a href="#" class="text-white text-decoration-none mx-2 underline-hover"> Privacy Policy</a> | <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Terms of Service</a>| <a href="contact.html" class="text-white text-decoration-none mx-2 underline-hover">Contact</a>
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/counter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demodots");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-white";
+        setTimeout(showSlides, 7000); // Change slide every 5 seconds
+      }
+    </script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyir4QQbo9Vh5NWLJ6ZWC5keVFedVVYN5Q09e-xS2rn27pGbdpKmKvZoMJ7sIfRGjk/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        var ex = document.getElementById("ex").checked;
+        var age = document.getElementById("age").checked;
+        if (age) {
+          formData.append("age", "Yes");
+        } else {
+          formData.append("age", "No");
+        }
+        if (ex) {
+          formData.append("ex", "Yes");
+        } else {
+          formData.append("ex", "No");
+        }
+        // Handle file uploads
+        const fileInput = document.getElementById("media");
+        if (fileInput.files.length > 0) {
+          const files = fileInput.files;
+          let base64Files = [];
+          for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            if (file.size > 6 * 1024 * 1024) {
+              swal("Error", "File size should be less than 6MB.", "error");
+              return;
+            }
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function() {
+              base64Files.push({
+                name: file.name,
+                content: reader.result.split(",")[1]
+              });
+              if (base64Files.length === files.length) {
+                formData.append("files", JSON.stringify(base64Files));
+                submitForm(formData);
+              }
+            };
+          }
+        } else {
+          submitForm(formData);
+        }
+      });
+      async function submitForm(formData) {
+        const submitButton = document.querySelector("button[type='submit']");
+        submitButton.disabled = true;
+        submitButton.innerText = "Loading...";
+        fetch(scriptURL, {
+          method: "POST",
+          body: formData
+        }).then((response) => {
+          swal("Done", "Submitted Successfully.", "success");
+          form.reset();
+        }).catch((error) => {
+          swal("Error", "Something went wrong. Please try again!", "error");
+        }).finally(() => {
+          submitButton.disabled = false;
+          submitButton.innerText = "Submit";
+        });
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <!-- Modal -->
+  </body>
+</html>

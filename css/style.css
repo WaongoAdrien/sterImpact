@@ -1,0 +1,593 @@
+:root{
+    --blue:  #6696c9;
+    --lblue: #c3d6eb;
+    --dark: #131416;
+    --dark2: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+    --gold:#FFD700;
+    --orange:#FFA500;
+    --green:#28A745 ;
+    --Dblue: #132154 ;
+    --copper: #ab6400 ;
+    --copper2: #e0c7a4;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+  
+}
+  
+.navbar {
+	font-size: 1.4rem;
+	justify-content: space-between;
+    align-items: center;
+	padding: 8px;
+	background-color: var(--Dblue);
+	transition: background-color 1s ease-in-out, transform 1s ease-in-out;
+    width: 100%; /* Makes it full width */
+    position: fixed !important; 
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+    color: white !important;
+    font-family: 'oswald';
+
+}
+.button {
+    background: transparent;
+    color: white;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    border: 2px solid var(--Dblue);
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 8px var(--Dblue);
+}
+
+.button:hover {
+    background: var(--copper);
+    color: white;
+    box-shadow: 0 0 15px var(--copper), 0 0 25px var(--copper);
+    transform: scale(1.05);
+    border: 2px solid var(--copper);
+    transform: scale(0.95);
+}
+
+.button:active {
+    background: var(--Dblue);
+    box-shadow: 0 0 10px var(--Dblue), 0 0 20px var(--Dblue) inset;
+    transform: scale(0.95);
+}
+
+
+.navbar a{
+    color: white !important;
+}
+
+
+.navbar-brand img {
+	height: 40px;
+}
+
+.bg-custom{
+	background-color: var(--Dblue);
+	width: 100%;
+  font-family: 'oswald';
+	transition: background-color 1s ease-in-out, transform 1s ease-in-out;
+
+}
+
+.bg-custom .container a{
+font-size: 5px;
+}
+.bg-custom .container p{
+font-size: 5px;
+}
+.bg-custom .container .font{
+font-size: 5px;
+}
+
+
+.ctn1{
+    background-color: var(--Dblue) !important;
+    color: white;
+}
+.ctn2{
+    background-color: var(--Dblue) !important;
+    color: var(--copper);
+}
+
+.ctn3{
+    background-image: linear-gradient(white, var(--Dblue));
+    color: var(--copper);
+}
+
+.ctn1p{
+    font-size: 2rem !important;
+    padding: 12px;
+}
+
+.ctn1p1{
+    font-size: 1.5rem !important;
+}
+
+.ctn1p1-w{
+    font-size: 1.5rem !important;
+    color: white !important;
+}
+
+.ctn1p2{
+    font-size: 1.3rem !important;
+}
+.copper{
+    color: var(--copper);
+}
+.blue{
+    color: var(--Dblue);
+}
+
+/* Second image (Portfolio) */
+/* Create a Parallax Effect */
+.bgimg-3, .background1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.bgimg-3 {
+    min-height: 400px;
+  }
+
+.bgimg2 {
+    min-height: 65%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bgimg1 {
+    background-image: url("image/backgrounds.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Ensures the background is visible */
+    width: 100%;
+}
+
+.h1-top{
+    color: #ab6400 ; 
+    font-weight: bold; 
+    font-size: 3rem !important;
+}
+.h1-b{
+    font-weight: bold; 
+    font-size: 3rem !important;
+}
+
+.h1-b-b{
+    font-weight: bold; 
+    font-size: 3rem !important;
+    color: var(--Dblue);
+}
+.h4-b-b{
+    font-weight: bold; 
+    font-size: 1.7rem !important;
+    color: var(--Dblue);
+}
+.h4-c{
+    font-weight: bold; 
+    font-size: 1.7rem !important;
+    color: var(--copper);
+}
+.h2-top{
+	background: rgba(245, 255, 255, 0.3);; /* Semi-transparent background */
+	backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 3rem !important;
+}
+.bordered-box {
+    border-left: 6px solid var(--Dblue); /* Solid vertical line */
+    padding-left: 15px;          /* Space between border and content */
+    box-sizing: border-box;      /* Ensures padding doesn't overflow the div */
+    height: 100%;                /* Let it grow with the content */
+    overflow: hidden;            /* Keeps content from spilling out */
+  }
+
+h3{
+    font-size: 1.5rem !important;
+}
+  .underline-half {
+    width: 20%;
+    height: 3px;
+    background-color: #ab6400;
+    margin-bottom: 1rem;
+  }
+
+    .underline-center {
+    width: 100%;
+    height: 3px;
+    background-color: #ab6400;
+    margin-bottom: 4rem;
+  }
+
+
+
+li{
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+.faded-image {
+    width: 100%; /* Or your desired size */
+    height: auto;
+    display: block;
+  
+    /* Fade effect using mask-image */
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+  
+
+.padding1{
+    padding: 120px;
+}
+
+.padding2{
+    padding: 80px;
+}
+
+.padding3{
+    padding:5px;
+}
+
+.size-percentage {
+    font-size: 4rem; /* Adjust size as needed */
+    font-weight: bold;
+    padding: 1px;
+    margin: 0 auto; /* Centers the element if it's block-level */
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .background {
+    background-image: url("image/bgimg2.png");
+    height: 70vh;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 0px;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 1.2;
+  }
+
+  .background1, .bgimg-3 {
+    position: relative;
+
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  /* Dark overlay */
+  .background1::before , .bgimg-3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity here */
+    z-index: 1;
+  }
+ 
+  
+  /* Text content */
+  .content1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+@media (max-width: 768px){
+    .h1-top{
+        color: #ab6400 ; 
+        font-weight: bold; 
+        font-size: 2rem !important;
+    }
+    .overlay-text-video{
+        width: 90% !important;
+    }
+    .w3-display-middle-top {
+        width: 90% !important;
+    }
+    .h1-w{
+        color: white ; 
+        font-weight: bold; 
+        font-size: 2rem !important;
+    }
+    .button {
+        display:block;
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+      }
+    .background1, .background3, .background {
+        height: 50vh;
+        background-attachment: scroll; /* fixed background can cause issues on mobile */
+        background-size: cover;
+        background-position: center;
+      }
+    .h1-b-b{
+        font-size: 2rem !important;
+    }
+
+    .h1-b{
+        font-weight: bold; 
+        font-size: 2rem !important;
+    }
+    .h4-b-b , .h4-c{
+        font-size: 1.5rem !important;;
+    }
+    .h2-top{
+        font-size: 2rem !important;
+    }
+    h1{
+        font-size: 1.5rem !important;
+    }
+    h3{
+       
+        font-size: 1.2rem !important;
+    }
+
+    .image1 img{
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    h2{
+        font-size: 1.7rem !important;
+       
+    }
+
+    .ctn1p{
+        font-size: 1.3rem !important;
+        padding: 12px;
+        font-weight: 295 !important;
+    
+    }
+    .ctn1p1{
+        font-size: 1.3rem !important;
+    }
+
+    li{
+        margin-bottom: 0px;
+        font-size: 1.2rem !important;
+    }
+    .padding3, .padding2 , .padding1{
+        padding:9px !important;
+    }
+    .size-percentage {
+        font-size: 3rem; /* Adjust size as needed */
+        font-weight: bold;
+        padding: 9px;
+        margin: 0 auto; /* Centers the element if it's block-level */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 0px !important;
+      }
+      .bg-custom .container a{
+      font-size: 12px;
+      }
+      .bg-custom .container p{
+      font-size: 12px;
+      }
+      .bg-custom .container .font{
+      font-size: 12px;
+      }
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+   .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+  }
+
+.underline-hover {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .underline-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #b87333; /* Copper color */
+    transition: width 0.3s ease;
+  }
+
+  .underline-hover:hover::after {
+    width: 100%;
+  }
+
+
+
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 750px; /* Adjust as needed */
+    overflow: hidden;
+    
+}
+
+.video-wrappera{
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    overflow: hidden;
+   
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+
+.overlay-text-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    padding: 15px;
+   
+}
+
+
+.copperg{
+    background-image: linear-gradient(to top, #e0c7a4, white);
+}
+
+.bluegtop{
+    background-image: linear-gradient(to top, var(--Dblue), white);
+}
+
+
+
+   /* Animation base */
+   .fade-in,
+   .slide-in-left,
+   .slide-in-right {
+     opacity: 0;
+     transition: all 1.5s ease-out;
+     will-change: opacity, transform;
+   }
+   
+   .visible {
+     opacity: 1;
+     transform: translate(0, 0);
+   }
+   
+   /* Fade-in (defaults to slight Y offset) */
+   .fade-in {
+     transform: translateY(30px);
+   }
+   
+   /* Slide from left */
+   .slide-in-left {
+     transform: translateX(-800px);
+   }
+   
+   .slide-in-left.visible {
+     transform: translateX(0);
+   }
+   
+   /* Slide from right */
+   .slide-in-right {
+     transform: translateX(800px);
+   }
+   
+   .slide-in-right.visible {
+     transform: translateX(0);
+   }
+ 
+ 
+   .event-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 12px;
+  }
+  
+  .event-item img {
+    width: 180px;
+    height: 100px;
+    border-radius: 6px;
+  }
+  
+  .event-details {
+    flex: 1;
+  }
+  
+  .event-details span {
+    display: inline-block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .event-details p {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+details > summary {
+  list-style: none; /* Removes the default triangle   content: '▶';
+ */
+}
+
+summary{
+  background-color: var(--copper);
+  padding: 7px;
+}
+
+details > summary::before {
+  content: '';
+  display: inline-block;
+  margin-right: 0.5em;
+  transition: transform 0.2s;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+

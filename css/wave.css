@@ -1,0 +1,454 @@
+:root {
+    --copper: #ab6400;
+    --dblue: #132154;
+  }
+
+
+  .wave-container {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(to bottom, white, var(--copper)) !important;  
+    overflow: hidden;
+  }
+
+
+  .wave {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+  }
+
+
+
+  @keyframes moveWaves {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50px);
+    }
+  }
+
+  .main-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    text-align: center;
+    z-index: 2;
+    
+    display: flex; /* ADD FLEX */
+    justify-content: center; /* CENTER CONTENT2 horizontally */
+    align-items: center; /* center them vertically if they wrap */
+    gap: 30px; /* add nice space between each content2 */
+    flex-wrap: wrap; /* allow wrap on small screens */
+  }
+  
+  .content2 {
+    background: var(--dblue);
+    width: 350px;
+    height: 450px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  /* Default transitions */
+  .content2 h1, .content2 p {
+    margin: 10px 0;
+    transition: all 0.5s ease;
+  }
+  
+  /* Hover effect for the content text */
+  .content2:hover h1 {
+    display: none;
+    background: var(--dblue);
+    color: var(--copper);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+  
+  .content2:hover p {
+    background: white;
+    color: var(--dblue);
+    padding: 8px 12px;
+    border-radius: 7px;
+  }
+  
+  /* --- NEW PART: make other cards blur and shrink --- */
+  
+  /* When any content2 is hovered, blur and shrink the others */
+  .content2:hover ~ .content2,
+  .content2:not(:hover) {
+    transform: scale(0.95);
+    p{
+        display: none;
+    }
+  }
+  
+  /* Keep hovered one sharp and normal */
+  .content2:hover {
+    filter: none;
+    transform: scale(1.1);
+    
+  }
+  .margintop{
+    margin-top: 40px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .content2 {
+      width: 200px;
+      height: 200px;
+      height: 250px; /* Adjust height accordingly */
+    }
+    .main-container {
+        gap: 5px; /* Even less gap between items */
+        top: 40%;
+      }
+    .wave-container {
+        max-height: 700px;
+    }
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0% !important;
+      }
+      .margintop{
+        margin-top: 0px;
+      }
+    
+  }
+
+    
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .content2 {
+      width: 200px;
+      height: 200px;
+      height: 250px; /* Adjust height accordingly */
+    }
+    .main-container {
+        gap: 5px; /* Even less gap between items */
+        top: 40%;
+      }
+    .wave-container {
+        max-height: 700px;
+    }
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0% !important;
+      }
+      .margintop{
+        margin-top: 0px;
+      }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .content2 {
+      margin-top: 0px;
+      width: 130px;
+      height: 70px;
+      height: 190px; /* Adjust height accordingly */
+    }
+    .main-container {
+        gap: 5px; /* Even less gap between items */
+        top: 35%;
+      }
+  }
+  
+    
+  @media (max-width: 540px), (max-width: 344px) {
+    .content2 {
+      margin-top: 0px;
+      width: 130px;
+      height: 70px;
+      height: 190px; /* Adjust height accordingly */
+    }
+    .main-container {
+        gap: 5px; /* Even less gap between items */
+        top: 35%;
+      }
+  }
+
+      
+  @media  (max-width: 344px) {
+    .content2 {
+      margin-top: 0px;
+      width: 90px;
+      height: 70px;
+      height: 190px; /* Adjust height accordingly */
+    }
+    .main-container {
+        gap: 5px; /* Even less gap between items */
+        top: 35%;
+      }
+  }
+  
+  .shape-807{
+    overflow:hidden;
+    position:relative;
+    }
+    .shape-807::before{
+    content:' x';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    z-index: 0;
+    pointer-events: none;
+    background-repeat: no-repeat; 
+    background-size: 100% 90px;
+    background-position: 50% 0%;    
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23fbd8c2"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23fbd8c2"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23fbd8c2"/></svg>'); 
+    }
+    
+    @media (min-width:768px){
+    .shape-807::before{
+    background-size: 100% 90px;
+    background-position: 50% 0%;   
+    }  
+    }
+     
+    @media (min-width:1025px){
+    .shape-807::before{ 
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    transform:scaleX(4);
+    transform-origin: 100% 100%;
+    animation: 18s infinite alternate shape-anim-807  linear;
+    background-size: 100% 400px;
+    background-position: 50% 100%;  
+    background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="%230d2459"><path opacity=".5" d="M0 51v15l724-43L0 51z"/><path opacity=".3" d="M0 0v51l600-23L0 0z"/><path d="M0 65v38l1000-3V0L0 65z"/></g></svg>'); 
+    }
+    }
+    @media (min-width:2100px){
+    .shape-807::before{
+    background-size: 100% calc(2vw + 400px);
+    }
+    }
+    
+    @keyframes shape-anim-807 {
+      100% {
+        transform: scaleX(4) translateX(calc(100% - (100% / 4)));
+      }
+    }
+    
+    
+
+
+.shape-9040{
+  overflow:hidden;
+  position:relative;
+  }
+  .shape-9040::before{ 
+  content:'';
+  font-family:'shape divider from ShapeDividers.com';
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw; 
+  transform:scaleX(4.6);
+  transform-origin: 100% 0;
+  animation: 37s infinite alternate shape-anim-9040  linear;
+  background-size: 100% 269px;
+  background-position: 50% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%239c5b11"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%239c5b11"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%239c5b11"/></svg>'); 
+  }
+  
+  @media (min-width:2100px){
+  .shape-9040::before{
+  background-size: 242% calc(2vw + 269px);
+  }
+  }
+  
+  @keyframes shape-anim-9040 {
+    100% {
+      transform: scaleX(4.6) translateX(calc(100% - (100% / 4.6)));
+    }
+  }
+  
+     
+
+
+  /* From Uiverse.io by wilsondesouza */ 
+ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 5px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 10px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+  background-color: #128c7e;
+}
+
+.example-2 .icon-content a[data-social="facebook"] .filled,
+.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+  background-color: #3b5998;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+
+
+
+.triangle-shape {
+  position: relative;
+  background-color: var(--dblue); /* Dark blue */
+  height: 200px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle-shape-2 {
+  position: relative;
+  background-color: var(--dblue); /* Dark blue */
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+.triangle-shape h1{
+  position: absolute;
+  top: 60%;
+  left: 15%;
+
+}
+
+.custom-shape-divider-top-1746951044 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 0;
+}
+
+.custom-shape-divider-top-1746951044 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1746951044 .shape-fill {
+  fill: var(--copper);
+}
+
+
+

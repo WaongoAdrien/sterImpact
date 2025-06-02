@@ -1,0 +1,95 @@
+
+:root{
+    --blue:  #6696c9;
+    --lblue: #c3d6eb;
+    --dark: #131416;
+    --dark2: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+    --gold:#FFD700;
+    --orange:#FFA500;
+    --green:#28A745 ;
+    --Dblue: #132154 ;
+    --copper: #ab6400 ;
+
+}
+.form-container{
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    padding: 40px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    border-radius: 0px;
+    background-image: linear-gradient(to top, white, var(--Dblue));
+    line-height: 2;
+}
+
+
+.btn-block {
+    width: 90%;
+    background: transparent;
+    color: var(--Dblue);
+    padding: 0px 40px;
+    font-size: 2rem;
+    border: 2px solid var(--Dblue);
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 8px var(--Dblue);
+}
+
+.btn-block:hover {
+    background: var(--Dblue);
+    color: white;
+    box-shadow: 0 0 15px var(--Dblue), 0 0 25px var(--Dblue);
+    transform: scale(1.05);
+    border: 2px solid var(--Dblue);
+    transform: scale(0.95);
+}
+
+.btn-block:active {
+    background: var(--Dblue);
+    box-shadow: 0 0 10px var(--Dblue), 0 0 20px var(--Dblue) inset;
+    transform: scale(0.95);
+}
+
+.form-group{
+    font-size: 1.5rem;
+    text-align: left !important;
+}
+
+body {
+    background-image: linear-gradient(to bottom, white, var(--Dblue));
+    background-position: center;
+}
+
+
+@media (max-width: 600px) {
+    .form-container {
+        max-width: 90%;
+        padding: 20px;
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    .form-group {
+        font-size: 1.2rem;
+    }
+
+    .btn-block {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+
+
+

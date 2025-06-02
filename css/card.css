@@ -1,0 +1,46 @@
+/* From Uiverse.io by Gaurav-WebDev */ 
+:root{
+    --blue:  #6696c9;
+    --lblue: #c3d6eb;
+    --dark: #131416;
+    --dark2: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+    --gold:#FFD700;
+    --orange:#FFA500;
+    --green:#28A745 ;
+    --Dblue: #132154 ;
+    --copper: #ab6400 ;
+
+}
+.cards {
+  gap: 5px;
+  border: none !important;
+}
+
+.cards .card {
+  height: 70px;
+  border: none !important;
+  cursor: pointer;
+  transition: 400ms transform;
+}
+
+
+.cards .card:hover {
+  border: none !important;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #333;
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(2px);
+  transform: scale(0.9);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: none !important;
+}
