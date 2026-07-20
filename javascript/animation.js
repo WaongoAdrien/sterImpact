@@ -40,11 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
   window.addEventListener("scroll", function () {
+    const progressBar = document.getElementById("progressBar");
+    if (!progressBar) return;
+
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = (scrollTop / docHeight) * 100;
 
-    document.getElementById("progressBar").style.width = scrolled + "%";
+    progressBar.style.width = scrolled + "%";
   });
 
 

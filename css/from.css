@@ -21,12 +21,46 @@
     text-align: center;
     margin: auto;
     max-width: 700px;
-    padding: 40px;
+    padding: 48px;
     margin-top: 40px;
+    margin-bottom: 60px;
     font-size: 1.5rem;
-    border-radius: 0px;
-    background-image: linear-gradient(to top, white, var(--Dblue));
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid rgba(19, 33, 84, 0.08);
+    border-top: 4px solid var(--copper);
+    box-shadow: 0 10px 40px rgba(19, 33, 84, 0.12);
     line-height: 2;
+}
+
+.form-container .form-group label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--Dblue);
+    margin-bottom: 6px;
+    display: block;
+    letter-spacing: 0.3px;
+}
+
+.form-container .form-control {
+    border: 1.5px solid #e2e6ef;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    line-height: 1.4;
+    background: #fafbfe;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.form-container .form-control:focus {
+    border-color: var(--copper);
+    box-shadow: 0 0 0 3px rgba(171, 100, 0, 0.15);
+    background: white;
+    outline: none;
+}
+
+.form-container .form-check-label {
+    font-size: 1rem;
 }
 
 
@@ -68,8 +102,12 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, white, var(--Dblue));
-    background-position: center;
+    background-color: #ffffff;
+    background-image:
+        radial-gradient(circle at 8% 12%, rgba(171, 100, 0, 0.10), transparent 42%),
+        radial-gradient(circle at 92% 88%, rgba(19, 33, 84, 0.10), transparent 42%),
+        linear-gradient(135deg, #ffffff 0%, #f7f4ee 45%, #eef1f8 100%);
+    background-attachment: fixed;
 }
 
 
@@ -88,6 +126,149 @@ body {
     .btn-block {
         width: 100%;
         font-size: 1.5rem;
+    }
+}
+
+/* Step-by-step application wizard */
+.stepper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.stepper .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 90px;
+}
+
+.stepper .step-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #f3f5fa;
+    border: 2px solid var(--Dblue);
+    color: var(--Dblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.stepper .step-label {
+    font-size: 0.85rem;
+    color: var(--Dblue);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.stepper .step.active .step-circle {
+    background: var(--copper);
+    border-color: var(--copper);
+    color: white;
+    box-shadow: 0 0 12px rgba(171, 100, 0, 0.5);
+}
+
+.stepper .step.completed .step-circle {
+    background: var(--Dblue);
+    border-color: var(--Dblue);
+    color: white;
+}
+
+.stepper .step-line {
+    width: 60px;
+    height: 3px;
+    background: #ccd3e0;
+    margin: 21px 8px 0 8px;
+    transition: background 0.4s ease;
+}
+
+.stepper .step-line.completed {
+    background: var(--copper);
+}
+
+.form-step {
+    animation: fadeStepIn 0.4s ease;
+}
+
+.form-step[data-step="2"],
+.form-step[data-step="3"],
+.form-step[data-step="4"],
+.form-step[data-step="5"] {
+    display: none;
+}
+
+@keyframes fadeStepIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.step-actions .btn-block {
+    width: auto;
+    padding: 8px 30px;
+    font-size: 1.3rem;
+}
+
+.review-summary {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(19, 33, 84, 0.15);
+    font-size: 1.1rem;
+}
+
+.review-item span {
+    opacity: 0.7;
+    color: var(--Dblue);
+}
+
+@media (max-width: 600px) {
+    .stepper .step {
+        min-width: auto;
+    }
+    .stepper .step-circle {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+    .stepper .step-label {
+        display: none;
+    }
+    .stepper .step-line {
+        width: 16px;
+        margin: 15px 4px 0 4px;
+    }
+    .step-actions {
+        flex-direction: column-reverse;
+    }
+    .step-actions .btn-block {
+        width: 100%;
     }
 }
 

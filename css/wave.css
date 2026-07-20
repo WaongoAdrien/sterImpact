@@ -109,8 +109,9 @@
     transform: scale(1.1);
     
   }
-  .margintop{
-    margin-top: 40px;
+  .w3-container.margintop{
+    margin-top: 60px;
+    padding-left: 80px;
   }
   
   /* Responsive */
@@ -133,8 +134,9 @@
         height: auto;
         bottom: 0% !important;
       }
-      .margintop{
-        margin-top: 0px;
+      .w3-container.margintop{
+        margin-top: 30px;
+        padding-left: 20px;
       }
     
   }
@@ -160,8 +162,9 @@
         height: auto;
         bottom: 0% !important;
       }
-      .margintop{
-        margin-top: 0px;
+      .w3-container.margintop{
+        margin-top: 30px;
+        padding-left: 20px;
       }
     
   }

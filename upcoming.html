@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/wave.css">
     <!-- CSS FILES -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
     <!-- our project just needs Font Awesome Solid + Brands -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -147,7 +145,7 @@
               <a class="nav-link underline-hover" href="success.html">Impact Stories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="form.html"></a>
+              <a class="nav-link underline-hover" href="form.html">Apply</a>
             </li>
           </ul>
           <!-- Right-side links -->
@@ -166,7 +164,7 @@
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container " style="background-image: url('image/services.png');">
       <div class="content1">
-        <h1 class="bebas">News Listing</h1>
+        <h1 class="bebas"><span class="hero-title-gradient">News Listing</span></h1>
         <p></p>
       </div>
     </div>
@@ -347,59 +345,55 @@
       <h1 class=" bebas w3-center h1-b-b ">Moments from Our Journey</h1>
     </div>
     <!-- Tanzania grid-->
-    <section class="hero-section hero-section-full-height">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 col-12 p-0">
-            <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="imageeventslide/aubergineman.png" class="carousel-image img-fluid" alt="...">
-                  <div class="carousel-caption d-flex flex-column justify-content-end">
-                    <h1 class="bebas">Visit Burkina Faso</h1>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="imageeventslide/handswonion.png" class="carousel-image img-fluid" alt="...">
-                  <div class="carousel-caption d-flex flex-column justify-content-end">
-                    <h1 class="bebas">Ouagadougou 2025</h1>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="imageeventslide/mixbox.png" class="carousel-image img-fluid" alt="...">
-                  <div class="carousel-caption d-flex flex-column justify-content-end">
-                    <h1 class="bebas">Ouagadougou 2025</h1>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="imageeventslide/estellewmangoes.png" class="carousel-image img-fluid" alt="...">
-                  <div class="carousel-caption d-flex flex-column justify-content-end">
-                    <h1 class="bebas">Ouagadougou 2025</h1>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="imageeventslide/mangoesw.png" class="carousel-image img-fluid" alt="...">
-                  <div class="carousel-caption d-flex flex-column justify-content-end">
-                    <h1 class="bebas">Banfora 2024</h1>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#hero-slide" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+    <section class="event-carousel-section">
+      <div id="event-slide" class="carousel carousel-fade slide event-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#event-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#event-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#event-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#event-slide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#event-slide" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imageeventslide/aubergineman.png" alt="Visit Burkina Faso">
+            <div class="carousel-caption">
+              <h5 class="bebas">Visit Burkina Faso</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imageeventslide/handswonion.png" alt="Ouagadougou 2025">
+            <div class="carousel-caption">
+              <h5 class="bebas">Ouagadougou 2025</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imageeventslide/mixbox.png" alt="Ouagadougou 2025">
+            <div class="carousel-caption">
+              <h5 class="bebas">Ouagadougou 2025</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imageeventslide/estellewmangoes.png" alt="Ouagadougou 2025">
+            <div class="carousel-caption">
+              <h5 class="bebas">Ouagadougou 2025</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imageeventslide/mangoesw.png" alt="Banfora 2024">
+            <div class="carousel-caption">
+              <h5 class="bebas">Banfora 2024</h5>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#event-slide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#event-slide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
     <!--Triangle shaped agribussiness-->
@@ -467,15 +461,6 @@
         </div>
       </div>
     </footer>
-    <!--
-    <div class="w3-row copperg"><h1 class=" bebas w3-center h1-b-b ">Moments from Our Journey</h1></div>
-
-    slide show
-    
-    <div class=" shape-807 copper "><div class="w3-content" style="max-width:1200px;margin-top:20px;margin-bottom:80px;"><div class="w3-container "><div class="w3-display-container mySlides "><img src="imageeventslide/mangoesw.png" style="width:100%;"><div class="w3-display-bottomleft w3-container w3-padding-32" style="width: 100%;"><div class="caption bebas">Burkina Faso 2025 </div></div></div><div class="w3-display-container mySlides"><img src="imageeventslide/mixbox.png" style="width:100%; max-height: 600px;"><div class="w3-display-bottomleft w3-container w3-padding-32" style="width: 100%;"><div class="caption bebas">Ghana 2025 </div></div></div><div class="w3-display-container mySlides"><img src="imageeventslide/aubergineman.png" style="width:100%;"><div class="w3-display-bottomleft w3-container w3-padding-32" style="width: 100%;"><div class="caption bebas">Dakar 2024 </div></div></div><div class="w3-display-container mySlides"><img src="imageeventslide/estellewmangoes.png" style="width:100%; border-radius: 0px;"><div class="w3-display-bottomleft w3-container w3-padding-32" style="width: 100%;"><div class="caption bebas">Burkina Faso 2025 </div></div></div><div class="w3-display-container mySlides"><img src="imageeventslide/machineworking.png" style="width:100%; border-radius: 0px;"><div class="w3-display-bottomleft w3-container w3-padding-32" style="width: 100%;"><div class="caption bebas">Burkina Faso 2025 </div></div></div>
-          Slideshow next/previous buttons 
-          <div class="w3-container w3-padding w3-xlarge" style="background-color:#1a243f; border-radius: 0px;"><div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div><div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div><div class="w3-center"><span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span><span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span><span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span><span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span><span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span></div></div></div></div></div>
-  -->
     <!--Triangle shaped agribussiness-->
     <div class="triangle-shape w3-row ">
       <h1 class="bebas h1-top"> Upcoming events</h1>
@@ -577,35 +562,82 @@
         <p class="mb-0 text-white text-decoration-none mx-2 underline-hover font">&copy; 2025 Ster Impact. All Rights Reserved.</p>
         <p class="mb-0">
           <!--<i class="fa-brands fa-facebook" style="font-size: 24px; color: rgb(124, 124, 171);"></i> -->
-          <a href="#" class="text-white text-decoration-none mx-2 underline-hover"> Privacy Policy</a> | <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Terms of Service</a>| <a href="contact.html" class="text-white text-decoration-none mx-2 underline-hover">Contact</a>
+          <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#legalModal" data-legal-tab="privacy"> Privacy Policy</a> | <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#legalModal" data-legal-tab="terms">Terms of Service</a>| <a href="contact.html" class="text-white text-decoration-none mx-2 underline-hover">Contact</a>
         </p>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="counter.js"></script>
+    <script src="javascript/counter.js"></script>
     <script src="javascript/animation.js"></script>
+    <!-- Legal Modal: Privacy Policy & Terms of Service -->
+    <div class="modal fade" id="legalModal" tabindex="-1" aria-labelledby="legalModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header" style="background: var(--Dblue); color: white;">
+            <h5 class="modal-title bebas" id="legalModalLabel">Legal</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs mb-3" id="legalTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="privacy-tab" data-bs-toggle="tab" data-bs-target="#privacy-pane" type="button" role="tab" aria-controls="privacy-pane" aria-selected="true">Privacy Policy</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="terms-tab" data-bs-toggle="tab" data-bs-target="#terms-pane" type="button" role="tab" aria-controls="terms-pane" aria-selected="false">Terms of Service</button>
+              </li>
+            </ul>
+            <div class="tab-content barlow-condensed-regular" id="legalTabContent">
+              <div class="tab-pane fade show active" id="privacy-pane" role="tabpanel" aria-labelledby="privacy-tab">
+                <p><em>Last updated: 2025</em></p>
+                <p>Ster Impact ("we", "us", "our") respects your privacy. This Privacy Policy explains what information we collect through sterimpact.com, how we use it, and the choices you have.</p>
+                <h6 class="copper bebas">Information We Collect</h6>
+                <p>We collect information you provide directly, such as your name, email address, phone number, and any documents you submit through our contact and application forms. We may also collect basic usage data (such as pages visited) to help us improve the site.</p>
+                <h6 class="copper bebas">How We Use Your Information</h6>
+                <p>We use the information you provide to respond to inquiries, evaluate funding applications, communicate updates about our programs, and improve our website and services.</p>
+                <h6 class="copper bebas">Sharing of Information</h6>
+                <p>We do not sell your personal information. We may share it with trusted service providers who help us operate our forms and website, or when required to do so by law.</p>
+                <h6 class="copper bebas">Data Security</h6>
+                <p>We take reasonable measures to protect the information you share with us, but no method of transmission or storage is 100% secure.</p>
+                <h6 class="copper bebas">Your Rights</h6>
+                <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at <a href="mailto:info@sterimpact.com">info@sterimpact.com</a>.</p>
+                <h6 class="copper bebas">Changes to This Policy</h6>
+                <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page.</p>
+              </div>
+              <div class="tab-pane fade" id="terms-pane" role="tabpanel" aria-labelledby="terms-tab">
+                <p><em>Last updated: 2025</em></p>
+                <p>By accessing or using sterimpact.com, you agree to be bound by these Terms of Service. If you do not agree, please do not use this website.</p>
+                <h6 class="copper bebas">Use of the Website</h6>
+                <p>You agree to use this website only for lawful purposes and not to attempt to disrupt, scrape, or gain unauthorized access to any part of the site.</p>
+                <h6 class="copper bebas">No Investment or Financial Advice</h6>
+                <p>Content on this website is provided for general informational purposes only and does not constitute financial, legal, or investment advice. Submitting an application does not guarantee funding, partnership, or any other outcome.</p>
+                <h6 class="copper bebas">Intellectual Property</h6>
+                <p>All content on this site, including text, images, and logos, is the property of Ster Impact unless otherwise noted, and may not be reproduced without our permission.</p>
+                <h6 class="copper bebas">Application Submissions</h6>
+                <p>Applicants are responsible for the accuracy and completeness of the information and documents they submit through our forms.</p>
+                <h6 class="copper bebas">Limitation of Liability</h6>
+                <p>Ster Impact is not liable for any damages arising from your use of, or inability to use, this website.</p>
+                <h6 class="copper bebas">Changes to These Terms</h6>
+                <p>We may update these Terms of Service from time to time. Continued use of the site after changes are posted constitutes acceptance of the updated terms.</p>
+                <p>Questions? Contact us at <a href="mailto:info@sterimpact.com">info@sterimpact.com</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-block" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demodots");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " w3-white";
-        setTimeout(showSlides, 7000); // Change slide every 5 seconds
-      }
+      document.querySelectorAll('[data-legal-tab]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          var tabId = link.getAttribute('data-legal-tab') === 'terms' ? 'terms-tab' : 'privacy-tab';
+          var tabEl = document.getElementById(tabId);
+          if (tabEl && window.bootstrap) {
+            bootstrap.Tab.getOrCreateInstance(tabEl).show();
+          }
+        });
+      });
     </script>
   </body>
 </html>

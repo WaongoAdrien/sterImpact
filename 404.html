@@ -1,79 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SterImpact</title>
+    <title>Page Not Found | SterImpact</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
     <link rel="icon" type="image/png" href="image/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/polygon.css">
     <!-- our project just needs Font Awesome Solid + Brands -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
-      /* Add this class to use Bebas Neue font */
-      .barlow-condensed-regular {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      .barlow-condensed-semibold {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-      }
-
       .bebas {
         font-family: 'bebas neue', sans-serif;
       }
 
-      .oswald {
-        font-family: 'Oswald', sans-serif;
-      }
-
-      .light {
-        font-weight: 300;
-        /* Light */
-        font-size: 1rem;
-        color: #666;
-      }
-
-      .regular {
+      .barlow-condensed-regular {
+        font-family: "Barlow Condensed", sans-serif;
         font-weight: 400;
-        /* Regular */
-        font-size: 1.1rem;
-      }
-
-      .bold {
-        font-weight: 700;
-        /* Bold */
-        font-size: 1.1rem;
-      }
-
-      .w3-tag,
-      .fa {
-        cursor: pointer
-      }
-
-      .w3-tag {
-        height: 10px;
-        width: 10px;
-        padding: 0;
-        margin-top: 6px
+        font-style: normal;
       }
 
       body,
@@ -81,19 +34,56 @@
         overflow-x: hidden;
       }
 
-      .bgimg2 {
-        background-image: url("/image/bgimg2.png")
+      .error-section {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 120px 20px 80px;
       }
 
-      .bgimg1 {
-        background-image: url("/image/farmer.png")
+      .error-code {
+        font-size: 10rem;
+        line-height: 1;
+        letter-spacing: 4px;
+        margin-bottom: 0;
       }
 
-      ul {
-        list-style-type: none;
-        /* Remove bullets */
-        padding: 5px;
-        /* Remove padding */
+      @media (max-width: 600px) {
+        .error-code {
+          font-size: 5.5rem;
+        }
+      }
+
+      .error-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .error-actions .btn-outline {
+        background: transparent;
+        color: var(--Dblue);
+        padding: 10px 30px;
+        font-size: 1.2rem;
+        border: 2px solid var(--Dblue);
+        border-radius: 0px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        letter-spacing: 1px;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 0 0 8px var(--Dblue);
+      }
+
+      .error-actions .btn-outline:hover {
+        background: var(--Dblue);
+        color: white;
+        box-shadow: 0 0 15px var(--Dblue), 0 0 25px var(--Dblue);
+        transform: scale(0.97);
       }
     </style>
   </head>
@@ -135,119 +125,25 @@
         </div>
       </div>
     </nav>
-    <br>
-    <!-- Second Parallax Image with Portfolio Text 
-    <div class="bgimg-3 w3-display-container " style="background-image: url('image/services.png');"><div class="content1 "><h1 class="bebas">Contact</h1><p></p></div></div>-->
-    <!-- body-->
-    <!-- Content -->
-    <br>
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container " style="background-image: url('image/agrodevelopment.png');">
-      <div class="content1 ">
-        <h1 class="bebas"><span class="hero-title-gradient">Lets Build Together!</span></h1>
-      </div>
-    </div>
-    <div class="w3-center" style="max-width:1200px; margin: 0px auto 0 auto;">
-      <h1 class="bebas h1-top">Everything You Need for success, Handled ! </h1>
-    </div>
-    <!--Container with polygons-->
-    <div class="w3-container ">
-      <div class="w3-row" style="max-width:1200px; margin: 0px auto 0 auto;">
-        <div class="w3-third">
-          <div class="polygon-wrapper">
-            <div class="polygon-message" style="background-image: url(image/agri-growth.png);">
-              <h2>Tailored Investment!</h2>
-            </div>
-          </div>
-        </div>
-        <div class="w3-third">
-          <div class="polygon-wrapper">
-            <div class="polygon-message" style="background-image: url(image/empowered-woman.png);">
-              <h2>Network Building!</h2>
-            </div>
-          </div>
-        </div>
-        <div class="w3-third">
-          <div class="polygon-wrapper">
-            <div class="polygon-message" style="background-image: url(image/sustain-agribussiness.png);">
-              <h2>Technical Support!</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="underline-half"></div>
-    </div>
-    <div class="w3-row padding1">
-      <div class="w3-col l12 w3-display-container">
-        <p class="barlow-condensed-regular ctn1p1"> At <b class="copper">SterImpact</b>, we’re committed to empowering women in West Africa through agribusiness, skill building, and meaningful connection. If you have questions, ideas, or want to get involved, we’d love to hear from you. Whether you're a farmer, partner, volunteer, or supporter—your voice and presence matter. Reach out to learn more about our programs, events, and how we can work together to drive sustainable impact in our communities. <br>
-          <b class="copper">We're based in local villages, and our vision is big.</b> Let's stay connected, support each other, and grow together. <br>
-          <br>
-          <b class="copper bebas">Contact us today. <blockquote>Together, we sow the seeds of change.</blockquote>
-          </b>
+
+    <section class="error-section">
+      <div class="w3-container">
+        <h1 class="error-code bebas"><span class="hero-title-gradient">404</span></h1>
+        <h2 class="bebas h1-top">This page took a wrong turn</h2>
+        <p class="barlow-condensed-regular ctn1p1">
+          The page you're looking for doesn't exist, may have moved, or isn't live yet.<br>
+          Let's get you back on track.
         </p>
-      </div>
-    </div>
-    <div class="w3-content shape-1331 bluegtop" style="max-width:100%; margin-top: 3px; ">
-      <div class="w3-content text-white " style="max-width:900px; ">
-        <!-- Contact Container -->
-        <br>
-        <div class="w3-container semiclear ">
-          <div class="w3-row" style="padding: 20px;  ">
-            <div class="w3-col m5">
-              <div class="w3-padding-8">
-                <span class="w3-xxxlarge w3-border-blue bebas w3-bottombar copper">Contact Us</span>
-              </div>
-              <p class="w3-section barlow-condensed-regular ctn1p1 copper">
-                <i class="fa fa-map-marker w3-xlarge"></i>
-                <a href="https://www.google.com/maps/place/Dakar,+Senegal/@14.7111759,-17.5482266,12z/data=!3m1!4b1!4m6!3m5!1s0xec172f5b3c5bb71:0xb17c17d92d5db21f!8m2!3d14.716677!4d-17.4676861!16zL20vMGMxeG0?entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Dakar, Senegal</a>
-              </p>
-              <p class="w3-section barlow-condensed-regular ctn1p1 copper">
-                <i class="fa fa-envelope-o  w3-xlarge"></i>
-                <a href="mailto:info@sterimpact.com" target="_blank">info@sterImpact.com</a>
-              </p>
-              <!-- Contact -->
-              <div class="w3-container " style="margin-top:5px">
-                <form name="contact2" method="POST" data-netlify="true" onSubmit="submit" netlify data-netlify-honeypot="bot-field" action="submitted.html">
-                  <input name="bot-field" style="display: none;">
-                  <div class="w3-section barlow-condensed-regular ctn1p1">
-                    <label>Name</label>
-                    <br>
-                    <input class=" w3-border" type="text" name="Name" required>
-                  </div>
-                  <div class="w3-section barlow-condensed-regular ctn1p1">
-                    <label>Email</label>
-                    <br>
-                    <input class=" w3-border" type="email" name="Email" required>
-                  </div>
-                  <div class="w3-section barlow-condensed-regular ctn1p1">
-                    <label>Number</label>
-                    <br>
-                    <input class=" w3-border" type="tel" name="number" required>
-                  </div>
-                  <div class="w3-section barlow-condensed-regular ctn1p1">
-                    <label>Message</label>
-                    <br>
-                    <textarea class=" w3-border" name="Message" rows="3" required></textarea>
-                  </div>
-                  <button type="submit" class="btn-block text-white">Send Message</button>
-                </form>
-              </div>
-              <div class="w3-padding-16">
-                <span class="w3-xlarge w3-border-blue w3-bottombar  bebas text-white">Let's Build a More Equitable Future Together </span>
-              </div>
-            </div>
-            <div class="w3-col m7 w3-hide-small " style="height: 90vh; text-align: center;">
-              <br>
-              <br>
-              <img src="image/marketfruits.jpg" class="w3-round w3-image w3-opacity-none" alt="Table Setting" style="width: 450px; height: 90%; object-fit: cover;">
-            </div>
-          </div>
+        <div class="error-actions">
+          <a href="index.html" class="btn-outline bebas">Back to Home</a>
+          <a href="form.html" class="btn-outline bebas">Apply for Fund</a>
+          <a href="contact.html" class="btn-outline bebas">Contact Us</a>
         </div>
-        <br>
       </div>
-    </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-custom text-white text-center py-2 mt-0 ">
+    <footer class="bg-custom text-white text-center py-2 mt-5 ">
       <h4 class="bebas">Follow us </h4>
       <i class="fa fa-facebook-official underline-hover text-white " style="font-size: 1rem;"></i>
       <i class="fa fa-instagram underline-hover text-white " style="font-size: 1rem;"></i>
@@ -259,12 +155,11 @@
       <div class="container">
         <p class="mb-0 text-white text-decoration-none mx-2 underline-hover font">&copy; 2025 Ster Impact. All Rights Reserved.</p>
         <p class="mb-0">
-          <!--<i class="fa-brands fa-facebook" style="font-size: 24px; color: rgb(124, 124, 171);"></i> -->
           <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#legalModal" data-legal-tab="privacy"> Privacy Policy</a> | <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#legalModal" data-legal-tab="terms">Terms of Service</a>| <a href="contact.html" class="text-white text-decoration-none mx-2 underline-hover">Contact</a>
         </p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Legal Modal: Privacy Policy & Terms of Service -->
     <div class="modal fade" id="legalModal" tabindex="-1" aria-labelledby="legalModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-scrollable">
@@ -324,6 +219,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.querySelectorAll('[data-legal-tab]').forEach(function (link) {
         link.addEventListener('click', function () {

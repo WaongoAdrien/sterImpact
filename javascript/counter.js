@@ -1,8 +1,10 @@
 function animateCounter(target, duration, elementId, maxPercentage) {
+    let counterElement = document.getElementById(elementId);
+    if (!counterElement) return;
+
     let start = 0;
     let end = target * (maxPercentage / 100);
     let increment = end / (duration * 50);
-    let counterElement = document.getElementById(elementId);
     let current = start;
 
     function updateCounter() {
@@ -37,16 +39,18 @@ setInterval(startAnimationLoop, 6000);
 
 //https://forms.gle/rLLZLK7PRT8vzW8w5
 
-const btn = document.getElementById("#apply");
+const btn = document.getElementById("apply");
 
 function apply() {
     window.location.href = "form.html";
 }
 
-btn.addEventListener('click', (e) => {
-    e.preventDefault;
-    apply()
-});
+if (btn) {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        apply();
+    });
+}
 
 
 function toggleReadMore() {
