@@ -31,10 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     };
   
-    window.addEventListener("scroll", () => {
+    // capture:true so this still fires when an inner element (e.g. body,
+    // on pages where it - not window - ends up as the scrolling box) is
+    // what actually scrolls, since the "scroll" event doesn't bubble.
+    document.addEventListener("scroll", () => {
       handleScrollAnimation();
-    });
-  
+    }, true);
+
     // Initial check
     handleScrollAnimation();
   });

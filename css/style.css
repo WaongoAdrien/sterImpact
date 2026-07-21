@@ -441,6 +441,24 @@ h3{
     margin-bottom: 4rem;
   }
 
+  .team-photo {
+    width: 245px;
+    max-width: 100%;
+    height: 245px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 600px) {
+    .underline-center {
+      margin-bottom: 1.5rem;
+    }
+
+    .team-photo {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
 
 
 li{
@@ -669,6 +687,25 @@ li{
 
   .underline-hover:hover::after {
     width: 100%;
+  }
+
+  .nav-cta-btn {
+    background-color: var(--copper) !important;
+    color: white !important;
+    padding: 6px 20px !important;
+    border-radius: 4px;
+    margin-left: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-cta-btn::after {
+    display: none;
+  }
+
+  .nav-cta-btn:hover {
+    background-color: white !important;
+    color: var(--copper) !important;
+    box-shadow: 0 0 10px var(--copper);
   }
 
 

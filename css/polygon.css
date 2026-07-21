@@ -114,4 +114,64 @@
 
   }
 
+  .polygon-nav-btn {
+    display: none;
+  }
+
+  /* Small screens: show the 3 polygons as a one-at-a-time slide carousel,
+     matching the services cards carousel above (same carousel-active /
+     carousel-left state classes, same script pattern in services.html). */
+  @media (max-width: 768px) {
+    .polygon-carousel {
+      position: relative;
+      display: block;
+      min-height: 340px;
+    }
+
+    .polygon-slide {
+      position: absolute !important;
+      top: 0;
+      left: 150% !important;
+      transform: translateX(-50%);
+      width: 100% !important;
+      float: none !important;
+      transition: left 0.6s ease;
+    }
+
+    .polygon-slide.carousel-active {
+      left: 50% !important;
+      z-index: 2;
+    }
+
+    .polygon-slide.carousel-left {
+      left: -50% !important;
+    }
+
+    .polygon-nav-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(19, 33, 84, 0.85);
+      color: white;
+      border: none;
+      font-size: 1rem;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    .polygon-prev-btn {
+      left: 4px;
+    }
+
+    .polygon-next-btn {
+      right: 4px;
+    }
+  }
+
 

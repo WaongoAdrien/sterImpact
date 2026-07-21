@@ -7,8 +7,8 @@
   .wave-container {
     position: relative;
     width: 100%;
-    height: 90%;
-    background: linear-gradient(to bottom, white, var(--copper)) !important;  
+    height: 560px;
+    background: linear-gradient(to bottom, white, var(--copper)) !important;
     overflow: hidden;
   }
 
@@ -41,8 +41,8 @@
     max-width: 1200px;
     height: auto;
     text-align: center;
-    z-index: 2;
-    
+    z-index: 10;
+
     display: flex; /* ADD FLEX */
     justify-content: center; /* CENTER CONTENT2 horizontally */
     align-items: center; /* center them vertically if they wrap */
@@ -64,152 +64,128 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    transition: all 0.5s ease;
+    transition: opacity 0.6s ease;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
   }
-  
-  /* Default transitions */
+
+  /* Text is always visible on every card, on every screen size */
   .content2 h1, .content2 p {
     margin: 10px 0;
-    transition: all 0.5s ease;
   }
-  
-  /* Hover effect for the content text */
-  .content2:hover h1 {
-    display: none;
-    background: var(--dblue);
-    color: var(--copper);
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 8px;
-  }
-  
-  .content2:hover p {
+
+  .content2 p {
     background: white;
     color: var(--dblue);
     padding: 8px 12px;
     border-radius: 7px;
   }
-  
-  /* --- NEW PART: make other cards blur and shrink --- */
-  
-  /* When any content2 is hovered, blur and shrink the others */
-  .content2:hover ~ .content2,
-  .content2:not(:hover) {
-    transform: scale(0.95);
-    p{
-        display: none;
-    }
-  }
-  
-  /* Keep hovered one sharp and normal */
-  .content2:hover {
-    filter: none;
-    transform: scale(1.1);
-    
-  }
+
   .w3-container.margintop{
     margin-top: 60px;
     padding-left: 80px;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .content2 {
-      width: 200px;
-      height: 200px;
-      height: 250px; /* Adjust height accordingly */
+
+  /* Larger screens: all 3 cards stay side by side (default .main-container
+     flex layout already does this once nothing is hidden). */
+  @media (max-width: 1024px) {
+    .w3-container.margintop{
+      margin-top: 30px;
+      padding-left: 20px;
     }
-    .main-container {
-        gap: 5px; /* Even less gap between items */
-        top: 40%;
-      }
+
+    /* Tablet: cards can wrap onto 2 rows, so keep some extra room here */
     .wave-container {
-        max-height: 700px;
+      height: 700px;
     }
-    .wave {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        bottom: 0% !important;
-      }
-      .w3-container.margintop{
-        margin-top: 30px;
-        padding-left: 20px;
-      }
-    
   }
 
-    
-  /* Responsive */
-  @media (max-width: 1024px) {
-    .content2 {
-      width: 200px;
-      height: 200px;
-      height: 250px; /* Adjust height accordingly */
-    }
-    .main-container {
-        gap: 5px; /* Even less gap between items */
-        top: 40%;
-      }
-    .wave-container {
-        max-height: 700px;
-    }
-    .wave {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        bottom: 0% !important;
-      }
-      .w3-container.margintop{
-        margin-top: 30px;
-        padding-left: 20px;
-      }
-    
+  .carousel-nav-btn {
+    display: none;
   }
-  
+
+  /* Small screens: turn the 3 cards into a slide carousel that shows one
+     full card at a time. It auto-advances right-to-left every 3 seconds,
+     or the user can move it with the prev/next buttons - doing so stops
+     the autoplay (see the script in services.html). */
+  @media (max-width: 768px) {
+    .wave-container {
+      height: 520px;
+    }
+
+    .wave {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      bottom: 0% !important;
+    }
+
+    .main-container {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      display: block;
+      min-height: 460px;
+      padding: 16px 0;
+    }
+
+    .content2 {
+      position: absolute;
+      top: 0;
+      left: 150%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 320px;
+      height: auto;
+      transition: left 0.6s ease;
+    }
+
+    .content2.carousel-active {
+      left: 50%;
+      z-index: 2;
+    }
+
+    .content2.carousel-left {
+      left: -50%;
+    }
+
+    .carousel-nav-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(19, 33, 84, 0.85);
+      color: white;
+      border: none;
+      font-size: 1rem;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    .carousel-prev-btn {
+      left: 4px;
+    }
+
+    .carousel-next-btn {
+      right: 4px;
+    }
+  }
+
   @media (max-width: 480px) {
     .content2 {
-      margin-top: 0px;
-      width: 130px;
-      height: 70px;
-      height: 190px; /* Adjust height accordingly */
+      padding: 16px;
     }
-    .main-container {
-        gap: 5px; /* Even less gap between items */
-        top: 35%;
-      }
-  }
-  
-    
-  @media (max-width: 540px), (max-width: 344px) {
-    .content2 {
-      margin-top: 0px;
-      width: 130px;
-      height: 70px;
-      height: 190px; /* Adjust height accordingly */
+
+    .content2 h1 {
+      font-size: 1.3rem;
     }
-    .main-container {
-        gap: 5px; /* Even less gap between items */
-        top: 35%;
-      }
   }
 
-      
-  @media  (max-width: 344px) {
-    .content2 {
-      margin-top: 0px;
-      width: 90px;
-      height: 70px;
-      height: 190px; /* Adjust height accordingly */
-    }
-    .main-container {
-        gap: 5px; /* Even less gap between items */
-        top: 35%;
-      }
-  }
-  
   .shape-807{
     overflow:hidden;
     position:relative;
@@ -429,6 +405,7 @@ ul {
   position: absolute;
   top: 60%;
   left: 15%;
+  z-index: 2;
 
 }
 
@@ -451,6 +428,22 @@ ul {
 
 .custom-shape-divider-top-1746951044 .shape-fill {
   fill: var(--copper);
+}
+
+@media (max-width: 768px) {
+  .triangle-shape {
+    height: 150px;
+  }
+
+  .custom-shape-divider-top-1746951044 svg {
+    height: 80px;
+  }
+
+  .triangle-shape h1 {
+    left: 8%;
+    width: 84%;
+    font-size: 1.2rem !important;
+  }
 }
 
 
