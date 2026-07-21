@@ -1,0 +1,144 @@
+/* Site-wide footer redesign: company info, quick links, services, social */
+
+.footer-main {
+  font-family: "oswald";
+  padding-top: 48px;
+  padding-bottom: 20px;
+}
+
+.footer-col {
+  margin-bottom: 30px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.footer-brand:hover {
+  color: var(--copper);
+}
+
+.footer-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 0;
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 16px;
+  max-width: 280px;
+}
+
+.footer-line {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.footer-line i {
+  color: var(--copper);
+  width: 18px;
+  margin-right: 6px;
+}
+
+.footer-line a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-line a:hover {
+  color: var(--copper);
+}
+
+.footer-heading {
+  color: white;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--copper);
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-list a:hover {
+  color: var(--copper);
+  padding-left: 4px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.footer-social a:hover {
+  background: var(--copper);
+  border-color: var(--copper);
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 10px 0 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

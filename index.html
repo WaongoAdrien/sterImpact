@@ -12,9 +12,11 @@
     <link rel="icon" type="image/png" href="image/logo_1.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/wave.css">
+    <link rel="stylesheet" href="css/journal.css">
     <!-- our project just needs Font Awesome Solid + Brands -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
@@ -28,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
     <style>
       /* Add this class to use Bebas Neue font */
       .barlow-condensed-regular {
@@ -163,6 +166,7 @@
         </div>
       </div>
     </div>
+
     <!-- Body container -->
     <div class="w3-container ">
       <!-- Cashew grid-->
@@ -188,6 +192,103 @@
     </div>
     <br>
     <!--Seconnd row-->
+    <!-- Journal carousel: the raw-materials-export argument, told like pages
+         torn from an old field journal -->
+    <div class="journal-carousel" id="journalCarousel">
+      <div class="journal-progress" id="journalProgress">
+        <span class="segment"><span class="fill"></span></span>
+        <span class="segment"><span class="fill"></span></span>
+        <span class="segment"><span class="fill"></span></span>
+        <span class="segment"><span class="fill"></span></span>
+        <span class="segment"><span class="fill"></span></span>
+        <span class="segment"><span class="fill"></span></span>
+        <span class="segment"><span class="fill"></span></span>
+        <span class="segment"><span class="fill"></span></span>
+        <span class="segment"><span class="fill"></span></span>
+      </div>
+
+      <div class="journal-slide active">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/1-port-ghana.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">Africa exports jobs when it exports raw materials.</p>
+          <p class="journal-attribution">Akinwumi Adesina <span>&mdash; President, African Development Bank (AfDB)</span></p>
+        </div>
+      </div>
+
+      <div class="journal-slide">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/2-cocoa-beans.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">We mine gold, but import jewelry; we grow cocoa, but import chocolate.</p>
+          <p class="journal-attribution">AfDB Annual Meetings Address <span>&mdash; 2024</span></p>
+        </div>
+      </div>
+
+      <div class="journal-slide">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/3-container-ship.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">The tragedy of Africa is not that it is poor, but that it is poorly managed &mdash; raw materials out, finished goods in.</p>
+          <p class="journal-attribution">BusinessDay Editorial <span>&mdash; Nigeria</span></p>
+        </div>
+      </div>
+
+      <div class="journal-slide">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/4-glass-factory.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">Africa cannot industrialize if it continues to export its raw wealth.</p>
+          <p class="journal-attribution">AU Agenda 2063 <span>&mdash; Implementation Report</span></p>
+        </div>
+      </div>
+
+      <div class="journal-slide">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/5-cashew-nuts.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">A ton of raw cashew fetches $1,200 &mdash; but processed, it's worth over $10,000. Yet Tanzania exports the raw nuts.</p>
+          <p class="journal-attribution">The Citizen <span>&mdash; Tanzania</span></p>
+        </div>
+      </div>
+
+      <div class="journal-slide">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/6-diamond-mining.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">Exporting raw materials is exporting poverty in disguise.</p>
+          <p class="journal-attribution">Wanjira Mathai <span>&mdash; VP, World Resources Institute</span></p>
+        </div>
+      </div>
+
+      <div class="journal-slide">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/7-cotton-field.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">Benin grows cotton but imports T-shirts &mdash; why not stitch wealth at home?</p>
+          <p class="journal-attribution">Financial Times <span>&mdash; 2024</span></p>
+        </div>
+      </div>
+
+      <div class="journal-slide">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/8-textile-factory.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">No nation developed by selling what it barely touched.</p>
+          <p class="journal-attribution">Horn Review <span>&mdash; May 2025</span></p>
+        </div>
+      </div>
+
+      <div class="journal-slide">
+        <div class="journal-slide-bg" style="background-image: url('image/journal/9-fruit-processing.jpg');"></div>
+        <div class="journal-slide-content">
+          <span class="journal-quote-mark">&#8220;</span>
+          <p class="journal-quote">Value addition isn't a luxury; it's a liberation strategy.</p>
+          <p class="journal-attribution">African Center for Economic Transformation <span>&mdash; ACET</span></p>
+        </div>
+      </div>
+    </div>
+<br>
     <!-- Row 1 -->
     <div class="w3-row ctn1 padding1">
       <div class="w3-col l5 ">
@@ -440,26 +541,98 @@
     </footer>
     <!-- Footer -->
     <!-- Footer -->
-    <footer class="bg-custom text-white text-center py-2 mt-5 ">
-      <h4 class="bebas">Follow us </h4>
-      <i class="fa fa-facebook-official underline-hover text-white " style="font-size: 1rem;"></i>
-      <i class="fa fa-instagram underline-hover text-white " style="font-size: 1rem;"></i>
-      <i class="fa fa-twitter underline-hover text-white " style="font-size: 1rem;"></i>
-      <i class="fa fa-linkedin underline-hover text-white " style="font-size: 1rem;"></i>
-      <br>
-      <a href="#" class="text-white w3-margin underline-hover">
-        <i class="fa fa-arrow-up w3-margin-right"></i>To the top </a>
+    <footer class="bg-custom text-white footer-main">
       <div class="container">
-        <p class="mb-0 text-white text-decoration-none mx-2 underline-hover font">&copy; 2025 Ster Impact. All Rights Reserved.</p>
-        <p class="mb-0">
-          <!--<i class="fa-brands fa-facebook" style="font-size: 24px; color: rgb(124, 124, 171);"></i> -->
-          <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#legalModal" data-legal-tab="privacy"> Privacy Policy</a> | <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#legalModal" data-legal-tab="terms">Terms of Service</a>| <a href="contact.html" class="text-white text-decoration-none mx-2 underline-hover">Contact</a>
-        </p>
+        <div class="row footer-row">
+          <div class="col-lg-3 col-md-6 footer-col">
+            <a href="index.html" class="footer-brand">
+              <img src="image/logo_1.png" alt="Ster Impact logo" class="footer-logo">
+              <span class="bebas">Ster Impact</span>
+            </a>
+            <p class="barlow-condensed-regular footer-tagline">Empowering women in agribusiness across West Africa through funding, mentorship, and market access.</p>
+            <p class="barlow-condensed-regular footer-line"><i class="fa fa-location-dot"></i> Dakar, Senegal</p>
+            <p class="barlow-condensed-regular footer-line"><i class="fa fa-phone"></i> <a href="tel:+12016875033">+1 (201) 687-5033</a></p>
+            <p class="barlow-condensed-regular footer-line"><i class="fa fa-envelope"></i> <a href="mailto:info@sterimpact.com">info@sterimpact.com</a></p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-col">
+            <h5 class="bebas footer-heading">Quick Links</h5>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="success.html">Impact Stories</a></li>
+              <li><a href="upcoming.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="form.html">Apply Now</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-col">
+            <h5 class="bebas footer-heading">Our Services</h5>
+            <ul class="footer-list">
+              <li><a href="services.html">Ster Accelerate</a></li>
+              <li><a href="services.html">Ster Impact Fund</a></li>
+              <li><a href="services.html">Ster Advisory</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-col">
+            <h5 class="bebas footer-heading">Follow Us</h5>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fa fa-facebook-official"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+          <p class="mb-0 text-white footer-copy">&copy; 2025 Ster Impact. All Rights Reserved.</p>
+          <p class="mb-0">
+            <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#legalModal" data-legal-tab="privacy">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none mx-2 underline-hover" data-bs-toggle="modal" data-bs-target="#legalModal" data-legal-tab="terms">Terms of Service</a> | <a href="contact.html" class="text-white text-decoration-none mx-2 underline-hover">Contact</a>
+          </p>
+        </div>
       </div>
     </footer>
     <script src="javascript/counter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/animation.js"></script>
+    <script>
+      // Old-journal quote carousel: one slide active at a time, cross-fades
+      // with a slow Ken Burns zoom, auto-advancing every 3s. The top
+      // progress segments fill in sync so it reads like a Stories UI.
+      (function () {
+        var root = document.getElementById('journalCarousel');
+        if (!root) return;
+        var slides = Array.prototype.slice.call(root.querySelectorAll('.journal-slide'));
+        var fills = Array.prototype.slice.call(root.querySelectorAll('.journal-progress .fill'));
+        var n = slides.length;
+        var idx = 0;
+        var DURATION = 3000;
+
+        function activate(i) {
+          slides.forEach(function (s, j) {
+            s.classList.toggle('active', j === i);
+          });
+          fills.forEach(function (f, j) {
+            f.style.transition = 'none';
+            f.style.width = j < i ? '100%' : '0%';
+          });
+          void root.offsetWidth; // flush the instant resets above
+          var current = fills[i];
+          if (current) {
+            requestAnimationFrame(function () {
+              current.style.transition = 'width ' + DURATION + 'ms linear';
+              current.style.width = '100%';
+            });
+          }
+        }
+
+        activate(idx);
+        setInterval(function () {
+          idx = (idx + 1) % n;
+          activate(idx);
+        }, DURATION);
+      })();
+    </script>
     <script>
       let slideIndex = 0;
       const track = document.getElementById("slideTrack");
