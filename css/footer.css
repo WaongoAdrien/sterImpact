@@ -82,7 +82,7 @@
 }
 
 .footer-list li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .footer-list a {
@@ -140,5 +140,9 @@
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-list a {
+    font-size: 1.15rem;
   }
 }
