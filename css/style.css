@@ -85,6 +85,20 @@ html, body {
 }
 
 
+/* Small screens: the navbar collapses into a stacked dropdown menu (below
+   Bootstrap's lg breakpoint) - give each item more room so it's easy to
+   tap without hitting a neighbor by mistake. */
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-item {
+    margin: 6px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 .navbar-brand img {
 	height: 40px;
 }
@@ -554,7 +568,20 @@ li{
     text-align: center;
     padding: 2rem;
   }
-  
+
+  /* Match the home page's hero overlay: a snug dark box behind the
+     gradient title (like .overlay-text-video), instead of a full-banner
+     tint over the whole photo. */
+  .bgimg-3.hero-gradient-bg::before {
+    background-color: transparent;
+  }
+
+  .bgimg-3.hero-gradient-bg .content1 {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding: 10px 16px;
+  }
+
 @media (max-width: 768px){
     .h1-top{
         color: #ab6400 ; 
@@ -775,7 +802,11 @@ li{
    .fade-in {
      transform: translateY(30px);
    }
-   
+
+   .fade-in.visible {
+     transform: translate(0, 0);
+   }
+
    /* Slide from left */
    .slide-in-left {
      transform: translateX(-100px);
