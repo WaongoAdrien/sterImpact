@@ -12,6 +12,31 @@
     overflow: hidden;
   }
 
+  /* Hints that there's more content below the carousel */
+  .scroll-down-indicator {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    color: white;
+    font-size: 1.4rem;
+    opacity: 0.85;
+    pointer-events: none;
+    animation: scrollDownBounce 1.8s ease-in-out infinite;
+  }
+
+  @keyframes scrollDownBounce {
+    0%, 100% {
+      transform: translate(-50%, 0);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translate(calc(-50% + 10px), 0);
+      opacity: 1;
+    }
+  }
+
 
   .wave {
     position: absolute;
@@ -63,7 +88,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 50px;
     transition: opacity 0.6s ease;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
@@ -137,6 +162,7 @@
       width: 90%;
       max-width: 320px;
       height: auto;
+      padding-bottom: 70px;
       transition: left 0.6s ease;
     }
 
@@ -179,6 +205,7 @@
   @media (max-width: 480px) {
     .content2 {
       padding: 16px;
+      padding-bottom: 70px;
     }
 
     .content2 h1 {
