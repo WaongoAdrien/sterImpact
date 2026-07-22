@@ -100,12 +100,12 @@ html, body {
    tap without hitting a neighbor by mistake. */
 @media (max-width: 991.98px) {
   .navbar-nav .nav-item {
-    margin: 6px 0;
+    margin: 2px 0;
   }
 
   .navbar-nav .nav-link {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }
 
